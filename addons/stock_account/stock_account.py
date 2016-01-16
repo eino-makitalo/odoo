@@ -40,11 +40,11 @@ class account_invoice_line(osv.osv):
         return round(price, inv.currency_id.decimal_places)
 
     def get_invoice_line_account(self, type, product, fpos, company):
-        if company.anglo_saxon_accounting and type in ('in_invoice', 'in_refund'):
+        if company.anglo_saxon_accounting and type in ('in_invoice', 'in_refund') and product and product.type in ('consu', 'product'):
             accounts = product.product_tmpl_id.get_product_accounts(fiscal_pos=fpos)
             if type == 'in_invoice':
                 return accounts['stock_input']
-            return accounts['stock_ouput']
+            return accounts['stock_output']
         return super(account_invoice_line, self).get_invoice_line_account(type, product, fpos, company)
 
 class account_invoice(osv.osv):
@@ -271,6 +271,12 @@ class stock_quant(osv.osv):
             acc_valuation = acc_valuation.id
         if not accounts.get('stock_journal', False):
             raise UserError(_('You don\'t have any stock journal defined on your product category, check if you have installed a chart of accounts'))
+        if not acc_src:
+            raise UserError(_('Cannot find a stock input account for the product %s. You must define one on the product category, or on the location, before processing this operation.') % (move.product_id.name))
+        if not acc_dest:
+            raise UserError(_('Cannot find a stock output account for the product %s. You must define one on the product category, or on the location, before processing this operation.') % (move.product_id.name))
+        if not acc_valuation:
+            raise UserError(_('You don\'t have any stock valuation account defined on your product category. You must define one before processing this operation.'))
         journal_id = accounts['stock_journal'].id
         return journal_id, acc_src, acc_dest, acc_valuation
 
@@ -292,6 +298,9 @@ class stock_quant(osv.osv):
         #the standard_price of the product may be in another decimal precision, or not compatible with the coinage of
         #the company currency... so we need to use round() before creating the accounting entries.
         valuation_amount = currency_obj.round(cr, uid, move.company_id.currency_id, valuation_amount * qty)
+        #check that all data is correct
+        if move.company_id.currency_id.is_zero(valuation_amount):
+            raise UserError(_("The found valuation amount for product %s is zero. Which means there is probably a configuration error. Check the costing method and the standard price") % (move.product_id.name,))
         partner_id = (move.picking_id.partner_id and self.pool.get('res.partner')._find_accounting_partner(move.picking_id.partner_id).id) or False
         debit_line_vals = {
                     'name': move.name,
@@ -359,7 +368,7 @@ class stock_move(osv.osv):
     def _store_average_cost_price(self, cr, uid, move, context=None):
         ''' move is a browe record '''
         product_obj = self.pool.get('product.product')
-        if any([q.qty <= 0 for q in move.quant_ids]):
+        if any([q.qty <= 0 for q in move.quant_ids]) or move.product_qty == 0:
             #if there is a negative quant, the standard price shouldn't be updated
             return
         #Note: here we can't store a quant.cost directly as we may have moved out 2 units (1 unit to 5€ and 1 unit to 7€) and in case of a product return of 1 unit, we can't know which of the 2 costs has to be used (5€ or 7€?). So at that time, thanks to the average valuation price we are storing we will valuate it at 6€
@@ -452,7 +461,6 @@ class AccountChartTemplate(models.Model):
                     'company_id': company.id,
                     'fields_id': field.id,
                     'value': value,
-                    'res_id': 'product.category,' + str(self.env['ir.model.data'].xmlid_to_res_id('product.product_category_all')),
                 }
                 properties = PropertyObj.search([('name', '=', record), ('company_id', '=', company.id)])
                 if properties:

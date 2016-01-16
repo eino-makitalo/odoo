@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 06:26+0000\n"
-"PO-Revision-Date: 2015-10-07 13:41+0000\n"
+"POT-Creation-Date: 2015-10-09 09:18+0000\n"
+"PO-Revision-Date: 2015-12-02 08:43+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Georgian (http://www.transifex.com/odoo/odoo-9/language/ka/)\n"
 "MIME-Version: 1.0\n"
@@ -280,9 +280,9 @@ msgstr ""
 #: model:ir.module.module,description:base.module_account_extension
 msgid ""
 "\n"
-"        Add to res_config of account modules the possibility to install extra accounting modules\n"
+"        Adapt base accounting module for Enterprise Edition.\n"
 "\n"
-"        This module will be auto installed if account module and enterprise version are present\n"
+"        This module will be auto installed if account module and enterprise edition are present\n"
 "    "
 msgstr ""
 
@@ -913,6 +913,21 @@ msgid ""
 "========================================\n"
 "* Show attachment on the top of the forms\n"
 "* Document Indexation: odt\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_au
+msgid ""
+"\n"
+"Australian Accounting Module\n"
+"============================\n"
+"\n"
+"Australian accounting basic charts and localizations.\n"
+"\n"
+"Also:\n"
+"    - activates a number of regional currencies.\n"
+"    - sets up Australian taxes.\n"
+"    "
 msgstr ""
 
 #. module: base
@@ -4293,10 +4308,10 @@ msgstr "%p - AM ის ან PM-ის ექვივალენტი."
 #: code:addons/base/res/res_users.py:407
 #, python-format
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (ასლი)"
 
 #. module: base
-#: code:addons/models.py:6145
+#: code:addons/models.py:6163
 #, python-format
 msgid ""
 "%s This might be '%s' in the current model, or a field of the same name in "
@@ -5079,11 +5094,6 @@ msgid "Add or not the corporate RML header"
 msgstr "დავამატოთ თუ არა კორპორატიული RML თავსართი"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_account_extension
-msgid "Add some extension to account modules for enterprise version"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_website_twitter
 msgid "Add twitter scroller snippet in website builder"
 msgstr ""
@@ -5593,6 +5603,11 @@ msgid "Australia"
 msgstr "ავსტრალია"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_au
+msgid "Australian - Accounting"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.at
 msgid "Austria"
 msgstr "ავსტრია"
@@ -5708,7 +5723,7 @@ msgstr "ბანკი"
 #: model:ir.ui.view,arch_db:base.view_partner_bank_search
 #: model:ir.ui.view,arch_db:base.view_partner_bank_tree
 msgid "Bank Accounts"
-msgstr ""
+msgstr "საბანკო ანგარიშები"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_bank_bic
@@ -6722,7 +6737,7 @@ msgstr "კომპანიები"
 #: model:ir.ui.view,arch_db:base.view_users_search
 #: selection:res.partner,company_type:0
 msgid "Company"
-msgstr ""
+msgstr "კომპანია"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_17
@@ -6801,7 +6816,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_wkf_transition_condition
 #: model:ir.ui.view,arch_db:base.values_view_form_defaults
 msgid "Condition"
-msgstr ""
+msgstr "პირობა"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_server_condition
@@ -7105,7 +7120,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_partner_create_date
 #: model:ir.model.fields,field_description:base.field_res_users_create_date
 msgid "Create Date"
-msgstr ""
+msgstr "შექმნის თარიღი"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_issue
@@ -7258,7 +7273,7 @@ msgstr "შექმნილი ვიუები"
 #: model:ir.model.fields,field_description:base.field_wkf_create_uid
 #: model:ir.model.fields,field_description:base.field_wkf_transition_create_uid
 msgid "Created by"
-msgstr ""
+msgstr "შემქმნელი"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_language_export_create_date
@@ -7326,12 +7341,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_wkf_create_date
 #: model:ir.model.fields,field_description:base.field_wkf_transition_create_date
 msgid "Created on"
-msgstr ""
+msgstr "შექმნის თარიღი"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_attachment_form
 msgid "Creation"
-msgstr ""
+msgstr "შექმნა"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_attachment_search
@@ -7543,6 +7558,11 @@ msgid "Czech Republic"
 msgstr "ჩეხეთის რესპუბლიკა"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_dhl
+msgid "DHL Shipping"
+msgstr ""
+
+#. module: base
 #: selection:base.language.install,lang:0
 msgid "Danish / Dansk"
 msgstr ""
@@ -7584,7 +7604,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging_dbname
 msgid "Database Name"
-msgstr ""
+msgstr "ახალი ბაზის სახელი"
 
 #. module: base
 #: model:ir.ui.menu,name:base.next_id_9
@@ -7638,7 +7658,7 @@ msgstr "გაყიდვის ორდერის თარიღები"
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_logging_search_view
 msgid "Day"
-msgstr ""
+msgstr "დღე"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
@@ -7773,7 +7793,7 @@ msgstr "მიწოდების ხარჯი"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module_demo
 msgid "Demo Data"
-msgstr ""
+msgstr "სადემონსტრაციო მონაცემები"
 
 #. module: base
 #: model:res.country,name:base.dk
@@ -7904,6 +7924,12 @@ msgstr ""
 msgid ""
 "Disabling this option will also uninstall the following modules \n"
 "%s"
+msgstr ""
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_discuss
+#: model:ir.module.module,shortdesc:base.module_mail
+msgid "Discuss"
 msgstr ""
 
 #. module: base
@@ -8186,7 +8212,7 @@ msgstr ""
 #. module: base
 #: model:res.groups,name:base.group_website_publisher
 msgid "Editor"
-msgstr ""
+msgstr "ედიტორი"
 
 #. module: base
 #: model:res.groups,name:base.group_website_designer
@@ -8204,7 +8230,7 @@ msgid "El Salvador"
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:592
+#: code:addons/base/ir/ir_ui_view.py:585
 #, python-format
 msgid "Element '%s' cannot be located in parent view"
 msgstr ""
@@ -8273,7 +8299,7 @@ msgstr ""
 #: code:addons/base/res/res_config.py:479
 #, python-format
 msgid ""
-"Enabling this feature you will install following paying application(s) \n"
+"Enabling this feature will install the following paying application(s) : \n"
 "%s"
 msgstr ""
 
@@ -8335,7 +8361,7 @@ msgid "Error ! You can not create recursive tags."
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:456
+#: code:addons/base/ir/ir_ui_view.py:449
 #, python-format
 msgid ""
 "Error context:\n"
@@ -8667,7 +8693,7 @@ msgid "Field Type"
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:916
+#: code:addons/base/ir/ir_ui_view.py:909
 #, python-format
 msgid "Field `%(field_name)s` does not exist"
 msgstr ""
@@ -9024,7 +9050,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_ir_logging_func
 #: selection:workflow.activity,kind:0
 msgid "Function"
-msgstr ""
+msgstr "ფუნქცია"
 
 #. module: base
 #: selection:ir.module.module,license:0
@@ -10141,7 +10167,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_installer
 msgid "Install Apps"
-msgstr ""
+msgstr "პროგრამების დაყენება"
 
 #. module: base
 #: model:ir.model,name:base.model_base_language_install
@@ -10268,7 +10294,7 @@ msgid "Introspection report on objects"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:4521
+#: code:addons/models.py:4516
 #, python-format
 msgid ""
 "Invalid \"order\" specified. A valid \"order\" specification is a comma-"
@@ -10330,7 +10356,7 @@ msgid "Invalid model name in the action definition."
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:584
+#: code:addons/base/ir/ir_ui_view.py:577
 #, python-format
 msgid "Invalid position attribute: '%s'"
 msgstr ""
@@ -11612,7 +11638,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
 #: model:ir.ui.view,arch_db:base.view_model_form
 msgid "Miscellaneous"
-msgstr ""
+msgstr "სხვადასხვაგვარი"
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_miss
@@ -11633,13 +11659,13 @@ msgid "Missing document(s)"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:6130
+#: code:addons/models.py:6148
 #, python-format
 msgid "Missing required value for the field '%s' (%s)"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:6127
+#: code:addons/models.py:6145
 #, python-format
 msgid "Missing required value for the field '%s'."
 msgstr ""
@@ -11748,7 +11774,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:692 code:addons/base/ir/ir_ui_view.py:870
+#: code:addons/base/ir/ir_ui_view.py:685 code:addons/base/ir/ir_ui_view.py:863
 #, python-format
 msgid "Model not found: %(model)s"
 msgstr ""
@@ -11884,7 +11910,7 @@ msgstr ""
 #. module: base
 #: selection:ir.cron,interval_type:0
 msgid "Months"
-msgstr ""
+msgstr "თვეები"
 
 #. module: base
 #: model:res.country,name:base.ms
@@ -11999,7 +12025,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "Name:"
-msgstr ""
+msgstr "სახელი:"
 
 #. module: base
 #: model:res.country,name:base.na
@@ -12399,7 +12425,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:3919
+#: code:addons/models.py:3915
 #, python-format
 msgid ""
 "One of the records you are trying to modify has already been deleted "
@@ -12483,7 +12509,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_diagram
 msgid "OpenERP Web Diagram"
-msgstr ""
+msgstr "OpenERP ვებ დიაგრამა"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_crm_config_opportunity
@@ -12832,7 +12858,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment
 msgid "Payment Acquirer"
-msgstr ""
+msgstr "გადახდის ოპერატორი"
 
 #. module: base
 #: model:ir.module.module,description:base.module_payment
@@ -12941,7 +12967,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_users_phone
 #, python-format
 msgid "Phone"
-msgstr ""
+msgstr "ტელეფონი"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
@@ -13337,7 +13363,7 @@ msgstr ""
 #. module: base
 #: model:res.groups,name:base.group_public
 msgid "Public"
-msgstr ""
+msgstr "საჯარო"
 
 #. module: base
 #: model:res.groups,comment:base.group_public
@@ -13526,7 +13552,7 @@ msgid "Record"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:4832
+#: code:addons/models.py:4827
 #, python-format
 msgid "Record #%d of %s not found, cannot copy!"
 msgstr ""
@@ -13561,7 +13587,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_actions.py:407 code:addons/models.py:4957
+#: code:addons/base/ir/ir_actions.py:407 code:addons/models.py:4952
 #, python-format
 msgid "Record does not exist or has been deleted."
 msgstr ""
@@ -13594,7 +13620,7 @@ msgid "Recursion found in child server actions"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:4031
+#: code:addons/models.py:4026
 #, python-format
 msgid "Recursivity Detected."
 msgstr ""
@@ -13996,7 +14022,7 @@ msgstr ""
 #. module: base
 #: selection:ir.mail_server,smtp_encryption:0
 msgid "SSL/TLS"
-msgstr ""
+msgstr "SSL/TLS"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_report_sxw_content
@@ -14339,8 +14365,18 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_delivery_dhl
+msgid "Send your shippings through DHL and track them online"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex
 msgid "Send your shippings through Fedex and track them online"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_temando
+msgid "Send your shippings through Temando and track them online"
 msgstr ""
 
 #. module: base
@@ -14522,7 +14558,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_filters_view_search
 msgid "Shared"
-msgstr ""
+msgstr "გაზიარებული"
 
 #. module: base
 #: selection:res.partner,type:0
@@ -14572,7 +14608,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_5
 msgid "Silver"
-msgstr ""
+msgstr "ვერცხლისფერი"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_discount
@@ -14618,7 +14654,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_installer
 msgid "Skip"
-msgstr ""
+msgstr "გამოტოვება"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_slides
@@ -14671,12 +14707,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.category,name:base.module_category_social_network
-#: model:ir.module.module,shortdesc:base.module_mail
-msgid "Social Network"
-msgstr ""
-
-#. module: base
 #: model:res.country,name:base.sb
 msgid "Solomon Islands"
 msgstr ""
@@ -14723,7 +14753,7 @@ msgid "Sort"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:4680
+#: code:addons/models.py:4675
 #, python-format
 msgid "Sorting field %s not found on model %s"
 msgstr ""
@@ -14912,7 +14942,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.menu,name:base.menu_project_config_project
 msgid "Stages"
-msgstr ""
+msgstr "ეტაპები"
 
 #. module: base
 #: selection:ir.sequence,implementation:0
@@ -15023,7 +15053,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "Street..."
-msgstr ""
+msgstr "ქუჩა..."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_bank_street2
@@ -15175,7 +15205,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_position
 msgid "Symbol Position"
-msgstr ""
+msgstr "სიმბოლოს პოზიცია"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_timesheet_synchro
@@ -15256,20 +15286,20 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Tag"
-msgstr ""
+msgstr "იარლიყი"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_category_id_972
 #: model:ir.model.fields,field_description:base.field_res_users_category_id
 #: model:ir.ui.menu,name:base.menu_partner_category_form
 msgid "Tags"
-msgstr ""
+msgstr "იარლიყები"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:base.view_partner_simple_form
 msgid "Tags..."
-msgstr ""
+msgstr "იარლიყები..."
 
 #. module: base
 #: model:res.country,name:base.tw
@@ -15324,7 +15354,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.menu,name:base.menu_custom
 msgid "Technical"
-msgstr ""
+msgstr "ტექნიკური"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_cron_view
@@ -15340,14 +15370,14 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module_name
 msgid "Technical Name"
-msgstr ""
+msgstr "ტექნიკური სახელი"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hidden
 #: model:ir.module.category,name:base.module_category_technical_settings
 #: model:ir.ui.view,arch_db:base.user_groups_view
 msgid "Technical Settings"
-msgstr ""
+msgstr "ტექნიკური პარამეტრები"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner_company_type
@@ -15371,9 +15401,14 @@ msgid "Telugu / తెలుగు"
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_temando
+msgid "Temando Shipping"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_report_name
 msgid "Template Name"
-msgstr ""
+msgstr "შაბლონის სახელი"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_new_api
@@ -15802,7 +15837,7 @@ msgid "The user will be able to manage equipments."
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:6142
+#: code:addons/models.py:6160
 #, python-format
 msgid "The value for the field '%s' already exists."
 msgstr ""
@@ -16122,7 +16157,7 @@ msgid "Translation comments"
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_translation.py:580
+#: code:addons/base/ir/ir_translation.py:582
 #, python-format
 msgid ""
 "Translation features are unavailable until you install an extra translation."
@@ -16405,13 +16440,13 @@ msgstr ""
 #: code:addons/models.py:1228
 #, python-format
 msgid "Unknown database identifier '%s'"
-msgstr ""
+msgstr "უცნობი მონაცემთა ბაზის იდენტიფიკატორი '%s'"
 
 #. module: base
 #: code:addons/models.py:1081
 #, python-format
 msgid "Unknown error during import:"
-msgstr ""
+msgstr "უცნობი შეცდომა იმპორტის დროს:"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:305
@@ -16429,13 +16464,13 @@ msgstr ""
 #: code:addons/base/ir/ir_fields.py:350
 #, python-format
 msgid "Unknown sub-field '%s'"
-msgstr ""
+msgstr "უცნობი ქვე-ველი '%s'"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:165
 #, python-format
 msgid "Unknown value '%s' for boolean field '%%(field)s', assuming '%s'"
-msgstr ""
+msgstr "უცნობი მნიშვნელობა '%s' - boolean ველისათვის '%%(field)s', ჩაითვალოს როგორც '%s'"
 
 #. module: base
 #: code:addons/translate.py:650
@@ -16627,7 +16662,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_change_password_user_user_login
 msgid "User Login"
-msgstr ""
+msgstr "მომხმარებლის შესვლა"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_log_ids
@@ -16939,6 +16974,12 @@ msgstr ""
 #, python-format
 msgid "Warning!"
 msgstr ""
+
+#. module: base
+#: code:addons/models.py:5855 code:addons/models.py:5905
+#, python-format
+msgid "Warnings"
+msgstr "გაფრთხილებები"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
@@ -17296,7 +17337,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_sips
-msgid "Worldline SIPS Payment Acquiring  for online payments"
+msgid "Worldline SIPS"
 msgstr ""
 
 #. module: base
@@ -17459,12 +17500,6 @@ msgid "You cannot unactivate the user you're currently logged in as."
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:3894
-#, python-format
-msgid "You cannot update the translated value of field '%s'"
-msgstr ""
-
-#. module: base
 #: code:addons/base/ir/ir_values.py:428
 #, python-format
 msgid "You do not have the permission to perform this operation!!!"
@@ -17534,7 +17569,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 #, python-format
 msgid "ZIP"
-msgstr ""
+msgstr "ZIP"
 
 #. module: base
 #: model:res.country,name:base.zr
@@ -17625,7 +17660,7 @@ msgid "cr: database cursor"
 msgstr ""
 
 #. module: base
-#: code:addons/models.py:4335
+#: code:addons/models.py:4330
 #, python-format
 msgid "created."
 msgstr ""
@@ -18003,7 +18038,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_ui_view.py:454
+#: code:addons/base/ir/ir_ui_view.py:447
 #, python-format
 msgid "n/a"
 msgstr ""

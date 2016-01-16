@@ -861,7 +861,7 @@ Possible children of the view element are:
     according to current user parameters, the latter is the direct value from
     a :meth:`~openerp.models.Model.read` (except for date and datetime fields
     that are `formatted according to user's locale
-    <https://github.com/odoo/odoo/blob/8.0/addons/web_kanban/static/src/js/kanban.js#L900>`_)
+    <https://github.com/odoo/odoo/blob/a678bd4e/addons/web_kanban/static/src/js/kanban_record.js#L102>`_)
   ``read_only_mode``
     self-explanatory
 
@@ -949,7 +949,7 @@ calendar view are:
     ``date_stop`` is provided records become movable (via drag and drop)
     directly in the calendar
 ``date_delay``
-    alternative to ``date_end``, provides the duration of the event instead of
+    alternative to ``date_stop``, provides the duration of the event instead of
     its end date
 
     .. todo:: what's the unit? Does it allow moving the record?

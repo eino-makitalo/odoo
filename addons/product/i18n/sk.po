@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-29 10:26+0000\n"
-"PO-Revision-Date: 2015-10-01 07:14+0000\n"
+"PO-Revision-Date: 2016-01-14 10:10+0000\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Slovak (http://www.transifex.com/odoo/odoo-9/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +157,7 @@ msgstr "<strong>Mena</strong>:<br/>"
 #. module: product
 #: model:ir.ui.view,arch_db:product.report_pricelist
 msgid "<strong>Description</strong>"
-msgstr ""
+msgstr "<strong>Popis</strong>"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.report_pricelist
@@ -167,7 +167,7 @@ msgstr ""
 #. module: product
 #: model:ir.ui.view,arch_db:product.report_pricelist
 msgid "<strong>Print date</strong>:<br/>"
-msgstr ""
+msgstr "<strong>Dátum vytlačenia</strong>:<br/>"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_only_form_view
@@ -258,7 +258,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_message_needaction
 #: model:ir.model.fields,field_description:product.field_product_template_message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Potrebná akcia"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_active
@@ -277,7 +277,7 @@ msgstr ""
 #: code:addons/product/pricelist.py:283
 #, python-format
 msgid "All Products"
-msgstr ""
+msgstr "Všetky produkty"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
@@ -336,7 +336,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:product.product_pricelist_view_search
 #: model:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Archived"
-msgstr ""
+msgstr "Archivovaný"
 
 #. module: product
 #: model:product.product,name:product.product_assembly
@@ -353,7 +353,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_attribute_id
 #: model:ir.model.fields,field_description:product.field_product_attribute_value_attribute_id
 msgid "Attribute"
-msgstr ""
+msgstr "Vlastnosť"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_value_price_extra
@@ -380,7 +380,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:product.product_template_search_view
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
 msgid "Attributes"
-msgstr ""
+msgstr "Vlastnosti"
 
 #. module: product
 #: model:product.product,website_description:product.product_product_5b
@@ -454,12 +454,12 @@ msgstr ""
 #. module: product
 #: selection:product.uom,uom_type:0
 msgid "Bigger than the reference Unit of Measure"
-msgstr ""
+msgstr "Väčšia než referenčná jednotka"
 
 #. module: product
 #: model:product.attribute.value,name:product.product_attribute_value_4
 msgid "Black"
-msgstr ""
+msgstr "Čierna"
 
 #. module: product
 #: model:product.product,name:product.product_product_35
@@ -530,7 +530,7 @@ msgstr "Vypočítať cenu produktu za jednotku na základe verzia cenníka."
 #: model:ir.model.fields,field_description:product.field_product_product_rental
 #: model:ir.model.fields,field_description:product.field_product_template_rental
 msgid "Can be Rent"
-msgstr ""
+msgstr "Môže sa prenajímať"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_sale_ok
@@ -548,7 +548,7 @@ msgstr "Zrušiť"
 #: model:ir.model.fields,field_description:product.field_product_category_type
 #: model:ir.ui.view,arch_db:product.product_category_form_view
 msgid "Category Type"
-msgstr ""
+msgstr "Typ kategórie"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_category_form_view
@@ -608,7 +608,7 @@ msgstr ""
 #: model:ir.actions.act_window,help:product.product_template_action_product
 #: model:ir.actions.act_window,help:product.product_variant_action
 msgid "Click to define a new product."
-msgstr ""
+msgstr "Kliknite pre definovanie nového produktu."
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_variant_easy_edit_view
@@ -624,7 +624,7 @@ msgstr "Farba"
 #: model:ir.model.fields,field_description:product.field_product_product_color
 #: model:ir.model.fields,field_description:product.field_product_template_color
 msgid "Color Index"
-msgstr ""
+msgstr "Farebný index"
 
 #. module: product
 #: model:product.product,description_sale:product.product_product_6
@@ -679,6 +679,12 @@ msgstr ""
 #. module: product
 #: model:product.public.category,name:product.sub_computers
 msgid "Computers"
+msgstr "Počítače"
+
+#. module: product
+#: code:addons/product/product.py:460
+#, python-format
+msgid "Consumable"
 msgstr ""
 
 #. module: product
@@ -702,7 +708,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_template_standard_price
 #: selection:product.pricelist.item,base:0
 msgid "Cost"
-msgstr ""
+msgstr "Cena"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_standard_price
@@ -813,12 +819,12 @@ msgstr "Dátum"
 #: model:ir.model.fields,help:product.field_product_product_message_last_post
 #: model:ir.model.fields,help:product.field_product_template_message_last_post
 msgid "Date of the last message posted on the record."
-msgstr ""
+msgstr "Dátum poslednej správy zaslanej záznamu."
 
 #. module: product
 #: model:product.uom,name:product.product_uom_day
 msgid "Day(s)"
-msgstr ""
+msgstr "Dní"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_uom_id
@@ -854,7 +860,7 @@ msgstr "Popis"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Description for Quotations"
-msgstr ""
+msgstr "Popis do ponúk"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
@@ -910,7 +916,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_uom_display_name
 #: model:ir.model.fields,field_description:product.field_report_product_report_pricelist_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Zobraziť meno"
 
 #. module: product
 #: model:product.uom,name:product.product_uom_dozen
@@ -953,7 +959,7 @@ msgstr ""
 #. module: product
 #: selection:product.template,state:0
 msgid "End of Lifecycle"
-msgstr ""
+msgstr "Koniec životného cyklu"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_date_end
@@ -969,7 +975,7 @@ msgstr ""
 #. module: product
 #: constraint:product.category:0
 msgid "Error ! You cannot create recursive categories."
-msgstr ""
+msgstr "Chyba! Nemožte vytvoriť rekurzívne kategórie."
 
 #. module: product
 #: constraint:product.pricelist.item:0
@@ -1102,25 +1108,25 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_pricelist_item_fixed_price
 msgid "Fixed Price"
-msgstr ""
+msgstr "Pevná cena"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_message_follower_ids
 #: model:ir.model.fields,field_description:product.field_product_template_message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Odberatelia"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_message_channel_ids
 #: model:ir.model.fields,field_description:product.field_product_template_message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "Odberatelia (Kanály)"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_message_partner_ids
 #: model:ir.model.fields,field_description:product.field_product_template_message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Odberatelia (Partneri)"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_pricelist_item_min_quantity
@@ -1197,7 +1203,7 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,help:product.field_product_category_sequence
 msgid "Gives the sequence order when displaying a list of product categories."
-msgstr ""
+msgstr "Dáva sekvenčné poradie pri zobrazovaní zoznamu produktových kategórií."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_sequence
@@ -1220,7 +1226,7 @@ msgstr ""
 #: model:product.product,name:product.product_product_24
 #: model:product.template,name:product.product_product_24_product_template
 msgid "Graphics Card"
-msgstr ""
+msgstr "Grafická karta"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_weight
@@ -1369,13 +1375,13 @@ msgstr "ID"
 #: model:ir.model.fields,help:product.field_product_product_message_unread
 #: model:ir.model.fields,help:product.field_product_template_message_unread
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "Ak zaškrtnuté, nové správy vyžadujú vašu pozornosť."
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_message_needaction
 #: model:ir.model.fields,help:product.field_product_template_message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Ak zaškrtnuté, nové správy vyžadujú vašu pozornosť."
 
 #. module: product
 #: model:product.product,website_description:product.product_product_6
@@ -1457,7 +1463,7 @@ msgstr ""
 #. module: product
 #: model:product.category,name:product.product_category_2
 msgid "Internal"
-msgstr ""
+msgstr "Interné"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_categ_id
@@ -1471,23 +1477,23 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_default_code
 #: model:ir.model.fields,field_description:product.field_product_template_default_code
 msgid "Internal Reference"
-msgstr ""
+msgstr "Vnútorná referencia"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_barcode
 msgid "International Article Number used for product identification."
-msgstr ""
+msgstr "Medzinárodné číslo položky použité pre identifikáciu výrobku"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Inventory"
-msgstr ""
+msgstr "Sklad"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_message_is_follower
 #: model:ir.model.fields,field_description:product.field_product_template_message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Je odberateľ"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_is_product_variant
@@ -1559,7 +1565,7 @@ msgstr "Dátum poslednej správy"
 #: model:ir.model.fields,field_description:product.field_product_uom_categ___last_update
 #: model:ir.model.fields,field_description:product.field_report_product_report_pricelist___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Posledná modifikácia"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_line_write_uid
@@ -1620,7 +1626,7 @@ msgstr "Dĺžka / Vzdialenosť"
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_attribute_attribute_line_ids
 msgid "Lines"
-msgstr ""
+msgstr "Riadky"
 
 #. module: product
 #: model:product.product,name:product.product_product_50
@@ -1643,7 +1649,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_packaging_ids
 #: model:ir.model.fields,field_description:product.field_product_template_packaging_ids
 msgid "Logistical Units"
-msgstr ""
+msgstr "Logistické jednotky"
 
 #. module: product
 #: model:res.groups,name:product.group_uom
@@ -1664,7 +1670,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_base_config_settings_group_product_variant
 #: model:res.groups,name:product.group_product_variant
 msgid "Manage Product Variants"
-msgstr ""
+msgstr "Spravovanie produktových variácií"
 
 #. module: product
 #: model:res.groups,name:product.group_mrp_properties
@@ -1690,7 +1696,7 @@ msgstr "Max. marža ceny"
 #: model:ir.model.fields,field_description:product.field_product_product_image_medium
 #: model:ir.model.fields,field_description:product.field_product_template_image_medium
 msgid "Medium-sized image"
-msgstr ""
+msgstr "Stredne veľký obrázok"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_template_image_medium
@@ -1822,13 +1828,13 @@ msgstr "Poznámky"
 #: model:ir.model.fields,field_description:product.field_product_product_message_needaction_counter
 #: model:ir.model.fields,field_description:product.field_product_template_message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Počet akcií"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_message_needaction_counter
 #: model:ir.model.fields,help:product.field_product_template_message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "Počet správ ktoré vyžadujú akciu"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_product_message_unread_counter
@@ -1894,7 +1900,7 @@ msgstr ""
 #. module: product
 #: model:ir.actions.act_window,name:product.action_packaging_view
 msgid "Packagings"
-msgstr ""
+msgstr "Balenia"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_category_parent_id
@@ -2254,7 +2260,7 @@ msgstr "Hľadanie cien produktov"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_search_view
 msgid "Products your store in the inventory"
-msgstr ""
+msgstr "Produkty vášho obchodu v sklade"
 
 #. module: product
 #: code:addons/product/product.py:817
@@ -2495,6 +2501,12 @@ msgid "Server"
 msgstr "Server"
 
 #. module: product
+#: code:addons/product/product.py:460
+#, python-format
+msgid "Service"
+msgstr ""
+
+#. module: product
 #: model:ir.ui.view,arch_db:product.product_template_search_view
 #: model:product.category,name:product.product_category_3
 #: model:product.public.category,name:product.services
@@ -2520,7 +2532,7 @@ msgid ""
 "Share your product to all companies defined in your instance.\n"
 " * Checked : Product are visible for every company, even if a company is defined on the partner.\n"
 " * Unchecked : Each company can see only its product (product where company is defined). Product not related to a company are visible for all companies."
-msgstr ""
+msgstr "Zdieľajte svoj produkt všetkými spoločnosťsami definovanými v inštancii.\n* Zaškrtnuté : Produkty sú viditeľné pre všetky spoločnosti, aj ked j spoločnosť definovaná na paertnerovi.\n* Nezaškrtnuté : Každá spoločnosť môže vidieť iba svoj produkt (produkt kde je definovaná spoločnosť). Produkty netýkajúce sa spoločnosti sú viditeľné pre všetky spoločnosti."
 
 #. module: product
 #: model:product.product,website_description:product.product_product_5b
@@ -2532,7 +2544,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_image_small
 #: model:ir.model.fields,field_description:product.field_product_template_image_small
 msgid "Small-sized image"
-msgstr ""
+msgstr "Malý obrázok"
 
 #. module: product
 #: model:ir.model.fields,help:product.field_product_template_image_small
@@ -2672,7 +2684,7 @@ msgstr ""
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_product_name_template
 msgid "Template Name"
-msgstr ""
+msgstr "Názov šablóny"
 
 #. module: product
 #: model:product.product,website_description:product.product_product_7
@@ -2997,7 +3009,7 @@ msgstr "Jednotka"
 #: model:ir.model.fields,field_description:product.field_product_template_uom_id
 #: model:ir.model.fields,field_description:product.field_product_uom_name
 msgid "Unit of Measure"
-msgstr ""
+msgstr "Merná jednotka"
 
 #. module: product
 #: model:ir.actions.act_window,name:product.product_uom_categ_form_action
@@ -3123,7 +3135,7 @@ msgstr "Varianty"
 #: model:ir.model.fields,field_description:product.field_product_template_seller_ids
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "Vendor"
-msgstr ""
+msgstr "Predajca"
 
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
@@ -3154,7 +3166,7 @@ msgstr ""
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_template_form_view
 msgid "Vendors"
-msgstr ""
+msgstr "Predajcovia"
 
 #. module: product
 #: selection:product.category,type:0
@@ -3185,7 +3197,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:product.field_product_product_warranty
 #: model:ir.model.fields,field_description:product.field_product_template_warranty
 msgid "Warranty"
-msgstr ""
+msgstr "Záruka"
 
 #. module: product
 #: model:product.product,name:product.product_product_34
@@ -3271,7 +3283,7 @@ msgstr ""
 msgid ""
 "Work with product variant allows you to define some variant of the same "
 "products, an ease the product management in the ecommerce for example"
-msgstr ""
+msgstr "Práca s variantou produktu vám umožňuje určovať variantu tých istých produktov, napríklad ľahkosťou spravovania produktu v e-commerce "
 
 #. module: product
 #: model:product.uom.categ,name:product.uom_categ_wtime
@@ -3334,7 +3346,7 @@ msgstr "cm"
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "days"
-msgstr ""
+msgstr "dni"
 
 #. module: product
 #: model:ir.model,name:product.model_decimal_precision
@@ -3518,7 +3530,7 @@ msgstr ""
 #. module: product
 #: model:ir.ui.view,arch_db:product.product_supplierinfo_form_view
 msgid "to"
-msgstr ""
+msgstr "na"
 
 #. module: product
 #: model:ir.model.fields,field_description:product.field_product_price_history_company_id
